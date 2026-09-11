@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YK Marketing — Gizlilik İlkesi ve Veri Silme</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; background: #f7f7f5; color: #1c1c1c; font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid #ddd; }
+  .meta { color: #666; font-size: 14px; margin-bottom: 32px; }
+  .en { color: #555; font-size: 14px; border-left: 3px solid #ccc; padding-left: 12px; margin: 12px 0 0; }
+  code { background: #ececea; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  a { color: #1a56b0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>YK Marketing — Gizlilik İlkesi</h1>
+  <div class="meta">Yürürlük tarihi: 11 Eylül 2026 · Uygulama: <strong>YK Marketing</strong> (Meta Business uygulaması)</div>
+
+  <h2 id="kapsam">1. Bu uygulama nedir?</h2>
+  <p><strong>YK Marketing</strong>, YK dijital pazarlama ajansının kendi müşterileri adına Meta reklam
+  hesaplarını yönetmek için kullandığı <em>dahili</em> bir araçtır. Meta Marketing API üzerinden reklam
+  performansını okur, kampanya / reklam seti / reklam kurar ve bütçe-durum değişikliklerini uygular.</p>
+  <p>Uygulama <strong>herkese açık bir hizmet değildir</strong>: Facebook ile Giriş (Facebook Login)
+  sunmaz, son kullanıcı hesabı oluşturmaz ve tüketicilerden veri toplamaz. Yalnızca ajansın
+  Business Manager'ında tanımlı <em>system user</em> kimlikleriyle, yönetim yetkisi verilmiş reklam
+  hesaplarına erişir.</p>
+  <p class="en"><strong>EN —</strong> YK Marketing is an internal tool used by the YK marketing agency to manage
+  its clients' Meta ad accounts through the Marketing API. It offers no Facebook Login, creates no end-user
+  accounts and collects no consumer data; it accesses only ad accounts explicitly assigned to the agency's
+  Business Manager system users.</p>
+
+  <h2 id="veriler">2. Hangi veriler işlenir?</h2>
+  <ul>
+    <li><strong>Reklam hesabı verileri:</strong> kampanya, reklam seti ve reklam yapılandırmaları; harcama,
+      gösterim, tıklama, mesajlaşma ve dönüşüm gibi <em>toplu</em> performans metrikleri.</li>
+    <li><strong>Sayfa ve kreatif verileri:</strong> reklamlarda kullanılan metin, görsel ve video
+    varlıkları; sayfa ve Instagram hesap kimlikleri.</li>
+    <li><strong>İşlem kayıtları:</strong> uygulamanın hangi hesapta hangi değişikliği ne zaman yaptığının
+    denetim kaydı (audit log).</li>
+  </ul>
+  <p>Meta'nın raporlama API'si yalnızca <strong>toplu ve anonim</strong> metrikler döndürür. Uygulama bireysel
+  Facebook/Instagram kullanıcılarının kimliğini, profilini veya mesaj içeriğini almaz ve saklamaz.</p>
+
+  <h2 id="amac">3. Verilerin kullanım amacı</h2>
+  <p>Veriler yalnızca ilgili müşterinin reklam hesabını yönetmek, performansı raporlamak ve müşteriyle
+  yazılı olarak kararlaştırılan reklam stratejisini uygulamak için kullanılır. Veriler reklam, profil
+  çıkarma veya üçüncü taraflara satış amacıyla kullanılmaz.</p>
+
+  <h2 id="saklama">4. Saklama ve güvenlik</h2>
+  <ul>
+    <li>Erişim token'ları yalnızca ajansın kendi cihazlarında, ortam değişkeni olarak tutulur; dosyaya
+    veya koda yazılmaz.</li>
+    <li>Her müşteri ayrı bir yapılandırma ve ayrı bir denetim kaydıyla izole edilir; bir müşterinin
+    verisi diğerinin kaydına girmez.</li>
+    <li>Performans anlık görüntüleri ve denetim kayıtları, müşteri sözleşmesi süresince ve sözleşme
+    bitiminden en geç 12 ay sonrasına kadar saklanır, sonra silinir.</li>
+  </ul>
+
+  <h2 id="paylasim">5. Üçüncü taraflarla paylaşım</h2>
+  <p>Veriler yalnızca ilgili müşteriyle (reklam hesabının sahibiyle) paylaşılır. Başka hiçbir üçüncü
+  tarafa aktarılmaz. Meta Platform Şartları ve Geliştirici Politikaları'na uyulur.</p>
+
+  <h2 id="veri-silme">6. Kullanıcı verilerinin silinmesi</h2>
+  <p>Bu uygulama Facebook Login kullanmadığı için bireysel kullanıcı verisi tutmaz. Buna rağmen bir
+  Meta kullanıcısı, sayfa yöneticisi veya reklam hesabı sahibi, uygulamanın kendisiyle ilişkili
+  tuttuğunu düşündüğü verinin silinmesini isteyebilir:</p>
+  <ol>
+    <li><a href="mailto:veyagiz@gmail.com?subject=YK%20Marketing%20veri%20silme%20talebi">veyagiz@gmail.com</a>
+    adresine <strong>"YK Marketing veri silme talebi"</strong> konulu bir e-posta gönderin.</li>
+    <li>E-postada ilgili reklam hesabı kimliğini (<code>act_…</code>) veya sayfa adını belirtin.</li>
+    <li>Talep <strong>30 gün</strong> içinde yerine getirilir; ilgili hesaba ait yerel anlık görüntüler ve
+    denetim kayıtları silinir ve size yazılı teyit gönderilir.</li>
+  </ol>
+  <p>Ayrıca reklam hesabı sahibi, Business Manager'dan ajansın system user erişimini istediği an
+  kaldırabilir; bu andan itibaren uygulama o hesaba hiçbir erişim yapamaz.</p>
+  <p class="en"><strong>EN — Data deletion:</strong> This app does not use Facebook Login and stores no
+  individual user data. To request deletion of any data the app may hold about your ad account or page,
+  email <a href="mailto:veyagiz@gmail.com">veyagiz@gmail.com</a> with the subject
+  "YK Marketing data deletion request" and the ad account id (<code>act_…</code>). Requests are fulfilled
+  within 30 days with written confirmation.</p>
+
+  <h2 id="iletisim">7. İletişim</h2>
+  <p>Veri sorumlusu: YK — Yağız Karakaya<br>
+  E-posta: <a href="mailto:veyagiz@gmail.com">veyagiz@gmail.com</a></p>
+
+  <h2 id="degisiklik">8. Değişiklikler</h2>
+  <p>Bu ilke güncellendiğinde yürürlük tarihi değiştirilir ve güncel sürüm bu adreste yayımlanır.</p>
+</main>
+</body>
+</html>
